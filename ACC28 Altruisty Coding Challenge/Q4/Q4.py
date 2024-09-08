@@ -1,4 +1,5 @@
-#There is a contradiction in this code this, in problem statement you have mentioned answer should not be zero
+'''There is a contradiction in this problem sir, in problem statement
+you have mentioned answer should not be zero'''
 #But the output you provided for the sample input zero
 #So let me provide answer for both
 
@@ -10,7 +11,7 @@ s=list(s)
 temp=sorted(s,reverse=1)
 for i in range(k):
     s.remove(temp[i])
-print("If ans can be Zero:",''.join(s))
+print("If answer can be Zero:",''.join(s))
 
 #As per the problem statement i.e answer should not be zero
 s="203"
@@ -33,4 +34,4 @@ else:
     for i in range(diff):
         s.remove('0')
     
-print("If ans can't be Zero:",''.join(s))
+print("If answer can't be Zero:",''.join(s))
