@@ -6,12 +6,12 @@ you have mentioned answer should not be zero'''
 
 s="203"
 k=2
-removed=0
 s=list(s)
+temp=sorted(s,reverse=1)
 
 #As per the expected output
 for i in range(k):
-    s.remove(s[i])
+    s.remove(temp[i])
 print("If answer can be Zero:",''.join(s))
 
 
@@ -27,7 +27,7 @@ else:
     diff=num_cnt
     i=0
     while num_cnt:
-        s.remove(s[i])
+        s.remove(temp[i])
         i+=1
         num_cnt-=1
     for i in range(diff):
