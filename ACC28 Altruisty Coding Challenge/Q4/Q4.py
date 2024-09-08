@@ -4,7 +4,7 @@ you have mentioned answer should not be zero'''
 #So let me provide answer for both
 
 
-s="203"
+s="4200"
 k=2
 s=list(s)
 temp=sorted(s,reverse=1)
@@ -12,11 +12,11 @@ temp=sorted(s,reverse=1)
 #As per the expected output
 for i in range(k):
     s.remove(temp[i])
-print("If answer can be Zero:",''.join(s))
+print("If answer can be Zero:",int(''.join(s)))
 
 
 #As per the problem statement i.e answer should not be zero
-s="203"
+s="4200"
 s=list(s)
 num_cnt=len(s)-s.count('0')
 if num_cnt>k:
@@ -24,7 +24,7 @@ if num_cnt>k:
         s.remove(temp[i])
 else:
     num_cnt-=1
-    diff=num_cnt
+    diff=k-num_cnt
     i=0
     while num_cnt:
         s.remove(temp[i])
